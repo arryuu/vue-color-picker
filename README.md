@@ -1,13 +1,13 @@
-# vColorPicker
+# arryuu-vcolorpicker
 
 > 基于Vue的颜色选择器插件
 
-[DEMO 演示](http://vue-color-picker.rxshc.com/)
+[DEMO 演示](https://coding.arryuu.com/arryuu-vcolorpicker)
 
 ## 安装
 
 ``` bash
-$ npm install vcolorpicker -S
+$ npm install arryuu-vcolorpicker -S
 ```
 ## 使用
 
@@ -15,8 +15,8 @@ $ npm install vcolorpicker -S
 
 ``` bash
 # main.js
-import vcolorpicker from 'vcolorpicker'
-Vue.use(vcolorpicker)
+import arryuuVcolorpicker from 'arryuu-vcolorpicker'
+Vue.use(arryuuVcolorpicker)
 ```
 
 在项目中使用 vcolorpicker

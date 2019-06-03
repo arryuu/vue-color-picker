@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+!.gitkeep
+!.gitignore
+!.htaccess
+!.nginx
+node_modules/

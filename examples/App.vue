@@ -1,15 +1,22 @@
 <template>
   <div id="app">
     <div class="page-header">
-      <h1>vColorPicker</h1>
+      <h1>arryuu-vcolorpicker</h1>
       <h2>基于 Vue 的颜色选择器插件</h2>
-      <a href="https://github.com/zuley/vue-color-picker" class="btn" target="_blank">View on GitHub</a>
+      <a href="https://github.com/arryuu/vue-color-picker" class="btn" target="_blank">View on GitHub</a>
+      <h2>Fork <a href="https://github.com/zuley/vue-color-picker" class="btn" target="_blank">zuley(原作者)</a> 0.16版本开始修改</h2>
     </div>
     <div class="page-content" v-hljs>
-      <h1>vColorPicker</h1>
+      <h1>arryuu-vcolorpicker</h1>
       <p>本插件仿照<code>Angular</code>的<code><a href="http://zhangbobell.github.io/color-picker/" target="_blank">color-picker</a></code>插件制作</p>
       <h2>Demo</h2>
       <colorPicker v-model="color" v-on:change="headleChangeColor"></colorPicker>
+      <br>
+      <colorPicker v-model="color2" v-on:change="headleChangeColor"></colorPicker>
+      <h2>更新</h2>
+      <ol>
+        <li>20190603 fix:当页面存在多个组件时，打开不能关闭bug。</li>
+      </ol>
       <h2>特点</h2>
       <ol>
         <li>简单易用，UI在原插件基础上优化增加了圆角和过渡动画</li>
@@ -17,14 +24,14 @@
         <li>在支持 html5 input[type='color'] 的浏览器实现了「更多颜色」的功能</li>
       </ol>
       <h2>安装</h2>
-      <pre>$ npm install vcolorpicker -S</pre>
+      <pre>$ npm install arryuu-vcolorpicker -S</pre>
       <h2>使用</h2>
       <h3>在 `main.js` 文件中引入插件并注册</h3>
 <pre># main.js
-import vcolorpicker from 'vcolorpicker'
+import vcolorpicker from 'arryuu-vcolorpicker'
 Vue.use(vcolorpicker)
 </pre>
-      <h3>在项目中使用 vcolorpicker</h3>
+      <h3>在项目中使用 arryuu-vcolorpicker</h3>
 <pre>&lt;template&gt;
   &lt;colorPicker v-model=&quot;color&quot; /&gt;
 &lt;/template&gt;
@@ -48,7 +55,7 @@ Vue.use(vcolorpicker)
 <pre>&lt;colorPicker v-model=&quot;color&quot; v-on:change=&quot;headleChangeColor&quot;&gt;&lt;/colorPicker&gt;
 </pre>
     </div>
-    <div class="page-footer">Vue-color-picker 插件由<a href="http://www.rxshc.com/" target="_blank">猪不乐意</a>编写</div>
+    <div class="page-footer"></div>
   </div>
 </template>
 
@@ -56,7 +63,8 @@ Vue.use(vcolorpicker)
 export default {
   data () {
     return {
-      color: '#ff0000'
+      color: '#ff0000',
+      color2: '#f9974c',
     }
   },
   methods: {
